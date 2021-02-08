@@ -1,8 +1,8 @@
-export default function Login(){
+export default function Register(){
     return(
         <div>
             <h1>
-                Os login vão aqui
+                Os registrooooo vão aqui
             </h1>
         </div>
    )

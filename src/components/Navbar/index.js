@@ -3,26 +3,35 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingBag, faUser, faSearch } from '@fortawesome/free-solid-svg-icons'
+import {useRouter} from 'next/router'
 
 
 export default function Navigation() {
+  const router = useRouter()
+  const isActive = (r) => {
+    if(r === router.pathname){
+      return "active"
+    }else{
+      return ""
+    }
+  }
   return (
     <body>
 
       <div>
         <Navbar style={{ backgroundImage: 'linear-gradient(to right, white, #f381a7)' }}>
           <span className="container justify-content-start">
-            <Navbar.Brand href="#home" style={{ paddingLeft: '40px' }}>
-              <img src="MMicon.png" alt="" width="90em" height="50em" />
+            <Navbar.Brand href="/" style={{ paddingLeft: '40px' }}>
+              <img src="../MMicon.png" alt="" width="90em" height="50em" />
             </Navbar.Brand>
           </span>
 
           <span className="container justify-content-end">
-            <Navbar.Brand href="/cart/index.js">
+            <Navbar.Brand className={"btn btn-outline-secondary" + isActive('/cart/cart')} href="/cart/cart">
               <FontAwesomeIcon icon={faShoppingBag} size='lg'/>
             </Navbar.Brand>
 
-            <Navbar.Brand href="/login/signin.js">
+            <Navbar.Brand className={"btn btn-outline-secondary" + isActive('/account/login')} href="/account/login">
             <FontAwesomeIcon icon={faUser} size='lg' />
             </Navbar.Brand>
           </span>
@@ -37,7 +46,7 @@ export default function Navigation() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <div className="container justify-content-center">
             <Nav className="mr-auto">
-              <Nav.Link href="#features">Biquínisssssss</Nav.Link>
+              <Nav.Link href="#features">Biquínis</Nav.Link>
               <Nav.Link href="#pricing">Maiô</Nav.Link>
               <NavDropdown title="Saída de Praia" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Curta</NavDropdown.Item>
