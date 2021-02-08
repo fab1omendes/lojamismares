@@ -37,7 +37,7 @@ export default function Navigation() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <div className="container justify-content-center">
             <Nav className="mr-auto">
-              <Nav.Link href="#features">Biquínis</Nav.Link>
+              <Nav.Link href="#features">Biquínisssssss</Nav.Link>
               <Nav.Link href="#pricing">Maiô</Nav.Link>
               <NavDropdown title="Saída de Praia" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Curta</NavDropdown.Item>
