@@ -1,7 +1,7 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components'
 import colorTheme from '../colorTheme.json'
-import Navigation from '../src/components/Navbar'
-import Footer from '../src/components/Footer'
+import Navigation from '../src/components/Navbar/navbar'
+import Footer from '../src/components/Footer/footer'
 
 const GlobalStyle = createGlobalStyle`
   body {
