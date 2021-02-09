@@ -19,10 +19,10 @@ export default function Navigation() {
     <body>
 
       <div>
-        <Navbar style={{ backgroundImage: 'linear-gradient(to right, white, #f381a7)' }}>
+        <Navbar style={{ backgroundImage: 'linear-gradient(to right, white, #e7c9c7)' }}>
           <span className="container justify-content-start">
             <Navbar.Brand href="/" style={{ paddingLeft: '40px' }}>
-              <img src="../MMicon.png" alt="" width="90em" height="50em" />
+              <img src="../mmlogo2.png" alt="" width="100em" height="70em" />
             </Navbar.Brand>
           </span>
 
@@ -39,7 +39,7 @@ export default function Navigation() {
         </Navbar>
       </div>
 
-      <Navbar collapseOnSelect expand="lg" style={{ backgroundImage: 'linear-gradient(to right, white, #f381a7)' }}>
+      <Navbar collapseOnSelect expand="lg" style={{ backgroundImage: 'linear-gradient(to right, white, #e7c9c7)' }}>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
