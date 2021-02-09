@@ -22,7 +22,7 @@ export default function Navigation() {
         <Navbar style={{ backgroundImage: 'linear-gradient(to right, white, #e7c9c7)' }}>
           <span className="container justify-content-start">
             <Navbar.Brand href="/" style={{ paddingLeft: '40px' }}>
-              <img src="../mmlogo2.png" alt="" width="100em" height="70em" />
+              <img src="../mmlogo1.png" alt="" width="100em" height="70em" />
             </Navbar.Brand>
           </span>
 
